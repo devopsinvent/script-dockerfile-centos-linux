@@ -1,4 +1,4 @@
-# script_dockerfile-centos_linux
+# script-dockerfile-centos-linux
 # Abstract: 
 
 This document provides all steps how to create a centos7 container with a fully configured Universal Agent inside. After performing all steps, you can schedule any application installed in your container using the Universal Controller Web-Client or REST API or any other Scheduler.   
