@@ -72,8 +72,10 @@ Download and extract the build context tar file “dockeragent_centos.tar” to 
 tar -xvf dockeragent_centos.tar
 
 Tar-file content:
-image 1
- 
+
+Image 1
+
+![](images/image1.png)
 
 **2.	Copy the Agent Install file to the build context folder**
 
@@ -84,7 +86,8 @@ The examples in this document have been done with the Agent Install file:
 **To start building the docker image your build context folder should contain the following files:**
 
 Image 2
- 
+
+![](images/image2.png) 
  
 # 6	Docker Image 
 To create a container with a universal agent you first need to build the docker image as a base to build a container. This is a onetime action.
@@ -97,11 +100,15 @@ Description:
 
 Image 3
 
+![](images/image3.png)
+
 
 **Check:
 If the build command was successful you should see the following images:**
 
 Image 4
+
+![](images/image4.png)
 
 
 **Build Image Process:**
@@ -130,7 +137,11 @@ Example env_agent_file:
 
 Image 5:
 
+![](images/image5.png)
+
 Image 6:
+
+![](images/image6.png)
 
 **Note:** The Universal Agent has many more configuration Parameters. If you need additional Parameters, the Dockerfile needs to be adjusted accordingly. 
  
@@ -142,10 +153,14 @@ docker run -it -d --hostname=centos01 --env-file=env_agent_file --name centos7_c
 
 Image 7
 
+![](images/image7.png)
+
 **Check:
 If the container build was successful you should see the following running container:**
 
 Image 8
+
+![](images/image8.png)
 
  
 **Additionally, you should check the container log file:**
@@ -165,7 +180,10 @@ When the container run command is executed the image centos7_img:latest is taken
 
 Example:
 The following screenshot shows three containers connect to the universal controller:
+
 Image 9
+
+![](images/image9.png)
 
 These are the commands, which have been executed to build the three containers:
 
@@ -233,24 +251,28 @@ The following provides some useful docker cli commands:
 The following provides a description of the Dockerfile:
  
 Image 10
+
+![](images/image10.png)
  
 Description:
 
-Image 11 
+Image 11
+
+![](images/image11.png)
 
 # 10	Test Cases
 The following basic test cases has been performed:
 
 Image 12
 
+![](images/image12.png)
 
 # 11	Problems
 The following provides a list of known problems:
 
 Image 13
 
-
-
+![](images/image13.png)
 
 # 12	Document References
 There are no document references.
